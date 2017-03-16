@@ -13,7 +13,6 @@ namespace FullStack.Models
         [Required]
         public string ArtistId { get; set; }
 
-        public DateTime DateTime { get; set; }
 
         [Required]
         [StringLength(255)]
@@ -24,6 +23,7 @@ namespace FullStack.Models
 
         [Required]
         public byte GenreId { get; set; }
+        public DateTime DateTime { get; internal set; }
     }
 
 }
